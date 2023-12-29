@@ -1,0 +1,88 @@
+body {
+    background-color: bisque;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.message-container {
+    background-color: rgb(252, 245, 237);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#messages {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(252, 245, 237);
+    overflow-y: scroll;
+}
+
+.message-input {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3px;
+    border-top: 1px solid black;
+}
+
+.message-input input {
+    width: 87%;
+    height: 7vh;
+    border-radius: 20px;
+    padding: 0px 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(230, 222, 212);
+}
+
+.message-input #recordButton {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(230, 222, 212);
+}
+
+.message-input #stopButton {
+    border: none;
+    padding: 10px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(230, 222, 212);
+}
+
+.message-input #icon {
+    font-size: 30px;
+}
+
+@media (max-width: 660px) and (min-width: 240px) {
+    .message-input #recordButton {
+        padding: 5px 10px;
+    }
+
+    .message-input #stopButton {
+        padding: 5px;
+    }
+
+    .message-input #icon {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 239px) {
+    .message-input #recordButton {
+        padding: 3px 8px;
+    }
+
+    .message-input #stopButton {
+        padding: 3px;
+    }
+
+    .message-input #icon {
+        font-size: 20px;
+    }
+}
